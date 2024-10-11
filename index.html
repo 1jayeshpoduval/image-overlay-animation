@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fancy Image Hover</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <section class="p-5 md:p-0 h-auto md:h-screen relative">
+      <div
+        class="mx-auto w-[95%] md:w-[90%] max-w-screen-xl h-full relative flex items-center justify-center"
+      >
+        <grid class="w-full grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div class="relative text-black flex flex-col gap-2">
+            <div
+              class="relative text-white overflow-hidden"
+              data-content="image-container"
+            >
+              <img
+                class="max-w-full md:h-[320px] lg:h-[400px] w-full h-full object-cover"
+                src="../grid_image-1.jpg"
+                alt="Man on top of a mountain"
+              />
+              <div
+                class="absolute bg-[#0036F3] h-[80%] w-[90%] -bottom-full -left-full transform rotate-[65deg] mix-blend-hard-light"
+                id="overlay1"
+              >
+                <div class="flex p-2 gap-2">
+                  <span
+                    class="text-[9rem] leading-none font-Mango-Grotesque font-semibold"
+                    >1</span
+                  >
+                  <span
+                    class="font-Mulish uppercase text-base leading-8 font-semibold"
+                    >See the impossible</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <h2 class="text-6xl font-Mango-Grotesque uppercase font-semibold">
+                Vision Beyond Limits
+              </h2>
+              <p
+                class="text-base leading-5 tracking-tight max-w-[40ch] lg:max-w-[50ch] opacity-75 font-medium font-Mulish"
+              >
+                Greatness begins with a vision—one that stretches beyond the
+                horizon of what’s known. It's about embracing the ideas that
+                seem out of reach and daring to chase them.
+              </p>
+            </div>
+          </div>
+          <div class="relative text-black flex flex-col gap-2">
+            <div
+              class="relative text-white overflow-hidden"
+              data-content="image-container"
+            >
+              <img
+                class="max-w-full md:h-[320px] lg:h-[400px] w-full h-full object-cover"
+                src="../grid_image-2.jpg"
+                alt="Rugby player raising above the rest to catch the ball"
+              />
+              <div
+                class="absolute transform rotate-[-75deg] bg-[#0036F3] h-[80%] w-[90%] -right-full mix-blend-hard-light -bottom-full"
+                id="overlay2"
+              >
+                <div class="flex p-2 gap-2">
+                  <span
+                    class="text-[9rem] leading-none font-Mango-Grotesque font-semibold"
+                    >2</span
+                  >
+                  <span
+                    class="font-Mulish font-semibold uppercase text-base leading-8"
+                    >Outlast the rest</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <h2 class="text-6xl font-Mango-Grotesque uppercase font-semibold">
+                Relentless grit
+              </h2>
+              <p
+                class="text-base leading-5 tracking-tight max-w-[40ch] lg:max-w-[50ch] opacity-75 font-medium font-Mulish"
+              >
+                True greatness isn’t easy. It’s built brick by brick with hard
+                work, perseverance, and a mindset that refuses to quit. When
+                others fold, you push harder.
+              </p>
+            </div>
+          </div>
+        </grid>
+      </div>
+    </section>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
